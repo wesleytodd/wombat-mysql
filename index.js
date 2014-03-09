@@ -52,7 +52,7 @@ module.exports = function(wombat) {
 	};
 
 	// Main run function
-	MySQL.prototype.run = function(done) {
+	MySQL.prototype.ensureInstalled = function(done) {
 
 		// Check if it is installed
 		this.isInstalled(function(installed) {
@@ -63,6 +63,8 @@ module.exports = function(wombat) {
 						done(err);
 					}
 				});
+			} else {
+				done();
 			}
 		}.bind(this));
 
