@@ -1,0 +1,18 @@
+{
+  "name": "wombat-mysql",
+  "version": "0.0.0",
+  "description": "A MySQL plugin for wombat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mysql",
+    "wombat"
+  ],
+  "author": "Wes Todd",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
+}
