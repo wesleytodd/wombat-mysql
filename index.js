@@ -11,7 +11,9 @@ module.exports = function(wombat) {
 		// Extends service and package
 		wombat.Service.call(this, 'mysql');
 		wombat.Package.call(this, util.format('mysql-server-%s', this.options.version), {
-			'php5-mysql': !!this.options.php
+			otherPackages: {
+				'php5-mysql': !!this.options.php
+			}
 		});
 	};
 	util.inherits(MySQL, wombat.Service);
